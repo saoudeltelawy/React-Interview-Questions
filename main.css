@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem 0.5rem;
+  line-height: 2;
+  background-color: whitesmoke;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold-highighted {
+  font-weight: 800;
+  font-size: 1rem;
+  background-color: palegreen;
+}
+
+h1 {
+  text-decoration: overline;
+  text-decoration: underline;
+}
+
+.subject-title {
+  text-decoration: underline;
+  color: darkblue;
+  letter-spacing: 2.2px;
+  font-weight: bolder;
+}
+
+h3 {
+  font-size: 1.7rem;
+  padding: 0.8rem 1.5rem;
+}
+
+h4,
+p {
+  margin-left: 0.7rem;
+}
+
+p {
+  word-wrap: break-word;
+  margin-bottom: 2.5rem;
+  border-bottom: 3px solid rgb(4, 134, 141);
+  padding-bottom: 2rem;
+}

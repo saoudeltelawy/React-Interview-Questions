@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interview Questions</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1 class="center">Interview Quesitons Collected by Saoud</h1>
+    <h3 class="subject-title">React:</h3>
+    <h4>1. What do props help us accomplish?</h4>
+    <p>
+      As parameters passed in functions so props passed into compeonents and
+      that Make a component more reusable <em>so that</em> we can keep our code
+      as dry as possible.
+    </p>
+
+    <h4>
+      2. Can I pass a custom prop (e.g. `blahblahblah={true}`) to a native DOM
+      element? (e.g. <code><div blahblahblah="{true}"></div></code> ) Why or why
+      not?
+    </h4>
+    <p>
+      No, because the JSX we use to describe native DOM elements will be turned
+      into REAL DOM elements by React. And real DOM elements only have the
+      prooperties/attributes specified in the HTML specification. (Which doesn't
+      include properties like `blahblahblah`) but this can be for
+      <code>
+        <span class="bold-highighted">
+          &lt;MyAwesomeHeader title="???" /&gt;
+        </span>
+      </code>
+    </p>
+
+    <h4>3. What data type is [props] when the component receives it.</h4>
+    <p>An object!</p>
+
+    <h4>4.What does the `.map()` array method do?</h4>
+    <p>
+      Returns a new array. Whatever gets returned from the callback function
+      provided is placed at the same index in the new array <br />
+      [Usually we take the items from the original array and modify them in some
+      way.]
+    </p>
+
+    <h4>5. What do we usually use `.map()` for in React?</h4>
+    <p>
+      Convert an array of raw data into an array of JSX elements that can be
+      displayed on the page.
+    </p>
+
+    <h4>
+      6. Why is using `.map()` better than just creating the components manually
+      by typing them out?
+    </h4>
+    <p>
+      It makes our code more "self-sustaining" - not requiring additional
+      changes whenever the data changes.
+    </p>
+
+    <h4>7. How would you describe the concept of "state"?</h4>
+    <p>
+      State refers to values that a component can maitain between render cycles
+      |OR Let's Say| 'State' in ReactJS? ...... The state is a built-in React
+      object that is used to contain data or information about the component. A
+      component's state can change over time; whenever it changes, the component
+      re-renders.
+    </p>
+
+    <h4>8. When would you want to use props instead of state?</h4>
+    <p>
+      Anytime you want to pass data into a component so that component can
+      determine what will get displayed on the screen.
+    </p>
+
+    <h4>9. When would you want to use state instead of props?</h4>
+    <p>
+      Anytime you want a component to maintain some values from within the
+      component. (And "remember" those values even when React re-renders the
+      component)
+    </p>
+
+    <h4>
+      10. What does "immutable" mean? Are props immutable? Is state immutable?
+    </h4>
+    <p>
+      Immutable means unchanging ... Props are immutable & State is mutable.[As
+      we do plab to change the state]
+    </p>
+
+    <h4>
+      11. You have 2 options for what you can pass in to a state setter function
+      (e.g. `setCount`). What are they?
+    </h4>
+
+    <ol>
+      <li>
+        New value of state (setCount(42)) Callback function - whatever the
+      </li>
+      <li>callback function returns === new value of state</li>
+    </ol>
+    <p></p>
+    <h4>
+      12. When would you want to pass the first option (from answer above) to
+      the state setter function?
+    </h4>
+    <p>
+      Whenever you don't need the previous value of state to determine what the
+      new value of state should be.
+    </p>
+
+    <h4>
+      13. Whenever you don't need the previous value of state to determine what
+      the new value of state should be.
+    </h4>
+    <p>Whenever you DO need the previous value to determine the new value</p>
+  </body>
+</html>
